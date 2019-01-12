@@ -24,13 +24,13 @@ sudo apt-get install git libnfc-bin autoconf libnfc-dev
 )
 
 # install Hardnested Attack Tool
-[ -d crypto1_bs ] || git clone https://github.com/aczid/crypto1_bs
+[ -d crypto1_bs ] || git clone https://github.com/wsion/crypto1_bs.git
 (
     cd crypto1_bs || exit 1
     git reset --hard
     git clean -dfx
     # patch initially done against commit 957702be:
-    patch -p1 < ../crypto1_bs.diff
+    # patch -p1 < ../crypto1_bs.diff
     make get_craptev1
     make get_crapto1
     make
