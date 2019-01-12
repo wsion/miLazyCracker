@@ -13,10 +13,10 @@ sudo apt-get install git libnfc-bin autoconf libnfc-dev
     git reset --hard
     git clean -dfx
     # patch initially done against commit 48156f9b:
-    patch -p1 < ../mfoc_test_prng.diff
-    patch -p1 < ../mfoc_fix_4k_and_mini.diff
-    patch -p1 < ../mfoc_support_tnp.diff
-    patch -p1 < ../mfoc_support_2k.diff
+    #patch -p1 < ../mfoc_test_prng.diff
+    #patch -p1 < ../mfoc_fix_4k_and_mini.diff
+    #patch -p1 < ../mfoc_support_tnp.diff
+    #patch -p1 < ../mfoc_support_2k.diff
     autoreconf -vfi
     ./configure
     make
