@@ -46,12 +46,12 @@ TMPFILE_MFD="mfc_${myUID}_dump.mfd"
 TMPFILE_UNK="mfc_${myUID}_unknownMfocSectorInfo.txt"
 TMPFILE_FND="mfc_${myUID}_foundKeys.txt"
 
-if [ -f "$TMPFILE_FND" ]; then
-    mfoc -f "$TMPFILE_FND" -O "$TMPFILE_MFD"  -D "$TMPFILE_UNK"
-else
-    mfoc -O "$TMPFILE_MFD" -D "$TMPFILE_UNK"
-fi
-mfocResult=$?
+#if [ -f "$TMPFILE_FND" ]; then
+    #mfoc -f "$TMPFILE_FND" -O "$TMPFILE_MFD"  -D "$TMPFILE_UNK"
+#else
+    #mfoc -O "$TMPFILE_MFD" -D "$TMPFILE_UNK"
+#fi
+mfocResult=9
 prngNotVulnerable=9
 keepTrying=1
 foundKeysForMFOC=" "
